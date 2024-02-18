@@ -55,25 +55,25 @@ sr.reveal('.home__scroll', { delay: 100 })
 sr.reveal('.home__img', { origin: 'right', delay: 100 })
 
 /*SCROLL ABOUT*/
-sr.reveal('.about__img', { delay: 100 })
-sr.reveal('.about__subtitle', { delay: 100 })
-sr.reveal('.about__profession', { delay: 200 })
-sr.reveal('.about__text', { delay: 100 })
-sr.reveal('.about__social-icon', { delay: 100, interval: 100 })
+// sr.reveal('.about__img', { delay: 100 })
+// sr.reveal('.about__subtitle', { delay: 100 })
+// sr.reveal('.about__profession', { delay: 200 })
+// sr.reveal('.about__text', { delay: 100 })
+// sr.reveal('.about__social-icon', { delay: 100, interval: 100 })
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', { distance: '20px', delay: 50, interval: 100 })
-sr.reveal('.skills__img', { delay: 100 })
+// /*SCROLL SKILLS*/
+// sr.reveal('.skills__subtitle', {})
+// sr.reveal('.skills__name', { distance: '20px', delay: 50, interval: 100 })
+// sr.reveal('.skills__img', { delay: 100 })
 
-/*SCROLL PORTFOLIO*/
-sr.reveal('.portfolio__img', { interval: 100 })
+// /*SCROLL PORTFOLIO*/
+// sr.reveal('.portfolio__img', { interval: 100 })
 
-/*SCROLL CONTACT*/
-sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__text', { interval: 100 })
-sr.reveal('.contact__input', { delay: 100 })
-sr.reveal('.contact__button', { delay: 100 })
+// /*SCROLL CONTACT*/
+// sr.reveal('.contact__subtitle', {})
+// sr.reveal('.contact__text', { interval: 100 })
+// sr.reveal('.contact__input', { delay: 100 })
+// sr.reveal('.contact__button', { delay: 100 })
 
 /* ===== Sticky ===== */
 window.addEventListener('scroll', function () {

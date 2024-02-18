@@ -7,6 +7,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- ===== BOX ICONS ===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -137,70 +138,12 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section-title">My Portfolio</h2>
 
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work1.png" alt="">
+            <div class="portfolio__container bd-grid" id="portfolioList">
+                <!-- portfolio.js -->
+            </div>
 
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work2.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work3.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work4.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work5.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work6.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work7.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work8.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="assets/img/portfolio/work9.png" alt="">
-
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
+            <div class="btn-more-container" id="loadMorePortfolio">
+                <button class="btn btn-more">Load More</button>
             </div>
         </section>
 
@@ -270,6 +213,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
