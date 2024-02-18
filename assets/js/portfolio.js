@@ -96,7 +96,7 @@ if(dataPortfolio && dataPortfolio.length){
     dataPortfolio.reverse().map(item => {
         $('#portfolioList').append(`
             <div class="portfolio__img morePortfolio" style="display: none;">
-                <img src="assets/img/portfolio/${item.thumb}" alt="${item.name}">
+                <img class="lazyload" data-original="assets/img/portfolio/${item.thumb}" alt="${item.name}">
                 
                 <div class="portfolio__link">
                     <a href="${item.link}" class="portfolio__link-name">View details</a>

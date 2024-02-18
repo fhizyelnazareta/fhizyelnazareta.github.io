@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, follow">	
@@ -18,10 +17,13 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== JQUERY ===== -->
+    <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- ===== BOX ICONS ===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preload" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Fhizyel Nazareta</title>
 </head>
@@ -62,7 +64,7 @@
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>About Me</a>
                 </div>
-                <img src="assets/img/fhizyel.png" alt="" class="home__img">
+                <img src="assets/img/fhizyel.png" alt="Fhizyel Nazareta" class="home__img">
 
             </div>
         </section>
@@ -73,7 +75,7 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/profil.png" alt="">
+                    <img class="lazyload" data-original="assets/img/profil.png" alt="Fhizyel Nazareta">
                 </div>
 
                 <div>
@@ -105,7 +107,7 @@
                 </div>
 
                 <a href="https://drive.google.com/file/d/1mtLFaNMe4gBpvw53CzLKM66yG_09e18b/view?usp=sharing" target="_blank" class="skills__img">
-                    <img src="assets/img/cv.jpg" alt="Curriculum Vitae">
+                    <img class="lazyload" data-original="assets/img/cv.jpg" alt="Curriculum Vitae">
                 </a>
             </div>
         </section>
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="skills__img">
-                    <img src="assets/img/coding.jpg" alt="Coding Work Inside">
+                    <img class="lazyload" data-original="assets/img/coding.jpg" alt="Coding Work Inside">
                 </div>
             </div>
         </section>
@@ -226,6 +228,20 @@
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/portfolio.js"></script>
+    <script defer>
+        var loadDeferredStyles = function() {
+          var addStylesNode = document.getElementById("deferred-styles");
+          var replacement = document.createElement("div");
+          replacement.innerHTML = addStylesNode.textContent;
+          document.body.appendChild(replacement)
+          addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function(){window.setTimeout(loadDeferredStyles,0);});
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script defer src="assets/js/lazysizes.min.js"></script>
 </body>
 
 </html>
