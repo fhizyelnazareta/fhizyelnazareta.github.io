@@ -27,6 +27,7 @@ h1,h2,p{ margin: 0; }
 ul{ margin: 0; padding: 0; list-style: none; }
 a{ text-decoration: none; color: var(--text-color); }
 img{ max-width: 100%; height: auto; display: block; }
+.hide { display: none; }
 
 /*===== CLASS CSS ===== */
 .section{ padding: 3rem 0; }
