@@ -93,7 +93,7 @@ let dataPortfolio = [
 
 
 if(dataPortfolio && dataPortfolio.length){
-    dataPortfolio.map(item => {
+    dataPortfolio.reverse().map(item => {
         $('#portfolioList').append(`
             <div class="portfolio__img morePortfolio" style="display: none;">
                 <img src="assets/img/portfolio/${item.thumb}" alt="${item.name}">
