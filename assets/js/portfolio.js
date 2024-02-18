@@ -2,8 +2,8 @@ let dataPortfolio = [
     {
         'thumb': 'work1.png',
         'name': 'Comovi Green',
-        'status':'none',
-        'link':'javascript:void(0)'
+        'status':'link',
+        'link':'https://drive.google.com/drive/folders/1so2eGTh-KTw3rv-7XmfkHkWVGNgbppmI?usp=sharing'
     },
     {
         'thumb': 'work15.png',
@@ -14,20 +14,20 @@ let dataPortfolio = [
     {
         'thumb': 'work2.png',
         'name': 'Head Office Cinema XXI',
-        'status':'none',
-        'link':'javascript:void(0)'
+        'status':'link',
+        'link':'https://drive.google.com/drive/folders/10SsrzY3k7UlGWeDLyGnOM2O6jiuMzURS?usp=sharing'
     },
     {
         'thumb': 'work3.png',
         'name': 'Wilx Store',
-        'status':'none',
-        'link':'javascript:void(0)'
+        'status':'link',
+        'link':'https://drive.google.com/drive/folders/1iB8vdBtw2XIaSeA6o1uCruymuwKiV_mM?usp=drive_link'
     },
     {
         'thumb': 'work4.png',
         'name': 'Honda Microsite',
-        'status':'none',
-        'link':'javascript:void(0)'
+        'status':'link',
+        'link':'https://drive.google.com/drive/folders/1StTJfSMXqSfQCZbgGVKLAhf_abNOQ4SV?usp=drive_link'
     },
     {
         'thumb': 'work5.png',
